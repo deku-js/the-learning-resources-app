@@ -1,22 +1,23 @@
 <template>
-  <div v-on:click="$emit('close')"></div>
-  <dialog open>
-    <header>
-      <slot name="header">
-        <h2>{{ title }}</h2>
-      </slot>
-    </header>
-    <section>
-      <slot></slot>
-    </section>
-    <menu>
-      <slot name="actions">
-        <base-button v-on:click="$emit('close')"></base-button>
-      </slot>
-    </menu>
-  </dialog>
+  <teleport to="body">
+    <div v-on:click="$emit('close')"></div>
+    <dialog open>
+      <header>
+        <slot name="header">
+          <h2>{{ title }}</h2>
+        </slot>
+      </header>
+      <section>
+        <slot></slot>
+      </section>
+      <menu>
+        <slot name="actions">
+          <base-button v-on:click="$emit('close')"></base-button>
+        </slot>
+      </menu>
+    </dialog>
+  </teleport>
 </template>
-
 <script>
 export default {
   props: {
@@ -25,7 +26,7 @@ export default {
       required: false,
     },
   },
-  emits: ['close']
+  emits: ['close'],
 };
 </script>
 
