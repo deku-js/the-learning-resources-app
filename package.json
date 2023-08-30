@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "npm run build && git push -f git@github.com:deku/https://github.com/deku-js/the-learning-resources-app.git main:gh-pages",
+    "deploy": "npm run build && git push -f git@github.com:deku-js/the-learning-resources-app.git main",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
