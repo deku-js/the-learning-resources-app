@@ -1,17 +1,28 @@
-# the-learning-resources-app
+# The Learning Resources App
 # About
 Learning Resources App is a simple web application built using Vue js, HTML, CSS, and JavaScript.
 
 It allows to share different learning resources to helps us to study.
 
 # Features
-- See the list of the created resources
-- Read a selected resource
-- Create a new resource
-- Delete a selected resource
-- Create a menu for switching views (List of the created resources; Create a new resource)
 
-# Tecnical features
+## See the list of the created resources
+![Alt text](public/media/image.png)
+
+## Read a selected resource
+
+![Alt text](public/media/image-1.png)
+
+## Create a new resource
+![Alt text](public/media/image-2.png)
+
+## Delete a selected resource
+![Alt text](public/media/image-3.png)
+
+## Create a menu for switching views
+![Alt text](public/media/image-4.png)
+
+# Tecnicals features
 - Form submission
 - Form validation
 - Ref
