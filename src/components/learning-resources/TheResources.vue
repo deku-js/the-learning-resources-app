@@ -73,9 +73,8 @@ export default {
       this.selectedTab = 'stored-resources';
     },
     removeResource(resId) {
-      console.log(this.storedResources.filter(res => res.id !== resId));
-      //const resIndex = this.storedResources.findIndex(res => res.id === resId);
-      // this.storedResources.splice(resIndex, 1);
+      const resIndex = this.storedResources.findIndex(res => res.id === resId);
+      this.storedResources.splice(resIndex, 1);
     },
   },
 };
